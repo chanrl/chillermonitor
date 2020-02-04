@@ -25,10 +25,10 @@ def generate_sample():
 lift, load, kW, time = generate_sample() 
 ### API CALL SHOULD RETURN VARS lift, load, kW as shown ###
 
-X = deque([], maxlen=None) # to show only recent data points, set maxlen to # of recent data points displayed
-Y = deque([], maxlen=None)
-Z = deque([], maxlen=None)
-hovertextdisplay = deque([], maxlen=None)
+X = []
+Y = []
+Z = []
+hovertextdisplay = []
 
 app = dash.Dash(__name__)
 
