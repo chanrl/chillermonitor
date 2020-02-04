@@ -31,6 +31,9 @@ Z = deque([], maxlen=None)
 hovertextdisplay = deque([], maxlen=None)
 
 app = dash.Dash(__name__)
+
+server = app.server
+
 app.layout = html.Div(
     [
         dcc.Graph(id='live-graph', animate=True),
