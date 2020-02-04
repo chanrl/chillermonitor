@@ -25,7 +25,7 @@ def generate_sample():
 lift, load, kW, time = generate_sample() 
 ### API CALL SHOULD RETURN VARS lift, load, kW as shown ###
 
-X = deque([], maxlen=None) # to show only recent data points, set maxlen to # of recent data points displayed. animate would need to be toggled off as well
+X = deque([], maxlen=None) # to show only recent data points, set maxlen to # of recent data points displayed
 Y = deque([], maxlen=None)
 Z = deque([], maxlen=None)
 hovertextdisplay = deque([], maxlen=None)
@@ -36,7 +36,7 @@ server = app.server
 
 app.layout = html.Div(
     [
-        dcc.Graph(id='live-graph', animate=True),
+        dcc.Graph(id='live-graph', animate=False),
         dcc.Interval(
             id='graph-update',
             interval=5000,
