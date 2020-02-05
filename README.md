@@ -10,17 +10,3 @@ Ready to upload to EBS and Azure App Services, or manual configuration on AWS EC
 <body>
 
 <iframe src="https://chillertest.azurewebsites.net/"></iframe>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<iframe src="https://www.w3schools.com">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-
-</body>
-</html>
