@@ -6,4 +6,11 @@ Ready to upload to EBS and Azure App Services, or manual configuration on AWS EC
 
 [Demo](https://chillertest.azurewebsites.net/)
 
+<!DOCTYPE html>
+<html>
+<body>
+
 <iframe src="https://chillertest.azurewebsites.net/"></iframe>
+
+</body>
+</html>
