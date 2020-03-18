@@ -15,6 +15,9 @@ df = pd.read_csv('SampleData.csv')
 df = df[df['kW/Ton']>0.001].reset_index(drop=True)
 
 def generate_sample():
+    '''
+    Test data generator to simulate API calls
+    '''
     row_num = random.randint(0,len(df))
     lift = df.Lift[row_num]
     load = df['Load(%)'][row_num]
@@ -23,8 +26,9 @@ def generate_sample():
     return lift, load, kW, time
 
 lift, load, kW, time = generate_sample() 
-### API CALL SHOULD RETURN VARS lift, load, kW as shown ###
+### API CALL SHOULD RETURN VARS lift, load, kW AS SHOWN ###
 
+### REPLACE X Y Z WITH DATA TO INITIALIZE GRAPH WITH ###
 X = []
 Y = []
 Z = []
@@ -47,7 +51,6 @@ dash_app.layout = html.Div(
 
 @dash_app.callback(Output('live-graph', 'figure'),
         [Input('graph-update', 'n_intervals')])
-
 
 def update_graph_scatter(n):
     lift, load, kW, time = generate_sample()
